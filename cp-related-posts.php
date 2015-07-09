@@ -860,7 +860,7 @@ function _cprp_content( $the_content, $mode = '' ){
         $str .= '</ul></div><div style="clear:both;"></div>';
     }        
     
-    return $str;
+    return apply_filters( 'cprp_content', $str, $related_posts );
 } // End _cprp_content
 
 function cprp_content( $the_content ){
